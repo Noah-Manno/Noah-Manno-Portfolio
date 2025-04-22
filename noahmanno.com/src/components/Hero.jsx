@@ -51,7 +51,7 @@ export default function Hero({ darkMode, toggleDarkMode }) {
               }}
             />
           </div>
-          <a href="#contact" className="btn">Let’s Connect</a>
+          <a href="/contact" className="btn">Let’s Connect</a>
         </motion.div>
 
         {/* Image + Blob */}
