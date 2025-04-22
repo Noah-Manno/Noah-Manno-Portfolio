@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Hero from './components/Hero';
 import About from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact'
 import SideMenu from './components/SideMenu';
 import './styles/Hero.css';
 import './styles/About.css';
@@ -24,6 +26,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Hero darkMode={darkMode} toggleDarkMode={toggleDarkMode} />} />
         <Route path="/about" element={<About darkMode={darkMode} toggleDarkMode={toggleDarkMode} />} />
+        <Route path="/projects" element={<Projects darkMode={darkMode} toggleDarkMode={toggleDarkMode} />} />
+        <Route path="/contact" element={<Contact darkMode={darkMode} toggleDarkMode={toggleDarkMode} />} />
       </Routes>
     </Router>
   );
