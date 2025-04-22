@@ -1,0 +1,60 @@
+/* About.css */
+.about {
+    padding: 5% 5%;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    color: #212529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+  }
+  
+  .about-inner {
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .about-inner h2 {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+  }
+  
+  .about-inner p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+  }
+  
+  /* Dark Mode */
+  body.dark .about {
+    background-color: black;
+    color: #e0e0e0;
+  }
+  
+  body.dark .about-inner h2 {
+    color: #66d9ef;
+  }
+  
+  /* Responsive */
+  @media (min-width: 768px) {
+    .about-inner h2 {
+      font-size: 2.5rem;
+    }
+  
+    .about-inner p {
+      font-size: 1.25rem;
+    }
+  }
+  
+  .dark-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
