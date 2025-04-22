@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Noah-Manno-Portfolio/static/css/main.4b9099f2.css",
+    "main.js": "/Noah-Manno-Portfolio/static/js/main.fe29d698.js",
+    "static/js/453.c873fed9.chunk.js": "/Noah-Manno-Portfolio/static/js/453.c873fed9.chunk.js",
+    "static/media/NewProfilePic.png": "/Noah-Manno-Portfolio/static/media/NewProfilePic.1c5a3c7ec98be1dd810a.png",
+    "static/media/darkModeLogo.png": "/Noah-Manno-Portfolio/static/media/darkModeLogo.ede7dc9622d37f507e44.png",
+    "static/media/lightModeLogo.png": "/Noah-Manno-Portfolio/static/media/lightModeLogo.8b3cb872bdb6e40c58ea.png",
+    "index.html": "/Noah-Manno-Portfolio/index.html",
+    "main.4b9099f2.css.map": "/Noah-Manno-Portfolio/static/css/main.4b9099f2.css.map",
+    "main.fe29d698.js.map": "/Noah-Manno-Portfolio/static/js/main.fe29d698.js.map",
+    "453.c873fed9.chunk.js.map": "/Noah-Manno-Portfolio/static/js/453.c873fed9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4b9099f2.css",
+    "static/js/main.fe29d698.js"
+  ]
+}
