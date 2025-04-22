@@ -1,3 +1,4 @@
+/* General Styles for Menu and Side Menu */
 .menu-toggle {
     position: fixed;
     top: 1rem;
@@ -41,8 +42,8 @@
   }
   
   .menu-logo {
-    width: 200px; /* Increase the width */
-    height: auto; /* Maintain aspect ratio */
+    width: 200px;
+    height: auto;
     margin-bottom: 2rem;
     transition: transform 0.3s ease;
   }
@@ -50,7 +51,6 @@
   .menu-logo:hover {
     transform: scale(1.05);
   }
-  
   
   .close-btn {
     position: absolute;
@@ -106,7 +106,7 @@
   }
   
   /* Blur overlay when menu is open */
-.overlay-blur {
+  .overlay-blur {
     position: fixed;
     top: 0;
     left: 0;
@@ -123,5 +123,87 @@
   .overlay-blur.active {
     opacity: 1;
     pointer-events: auto;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    /* For smaller screens, adjust the side menu width */
+    .side-menu {
+      width: 250px;
+    }
+  
+    .menu-toggle {
+      left: 1rem; /* Keep the menu button in place */
+    }
+  
+    /* When the side menu is open, push the content to the right */
+    body.menu-open .about,
+    body.menu-open .hero,
+    body.menu-open .side-menu {
+      transform: translateX(280px); /* Move the content when menu opens */
+      transition: transform 0.3s ease;
+    }
+  
+    .about {
+      padding: 5% 15%;
+    }
+  
+    /* Make the text smaller in the About section for smaller screens */
+    .about-inner h2 {
+      font-size: 1.8rem;
+    }
+  
+    .about-inner p {
+      font-size: 0.875rem;
+    }
+  
+    .about-sections .section h3 {
+      font-size: 1.2rem;
+    }
+  
+    .about-sections .section ul li {
+      font-size: 1rem;
+    }
+  
+    /* Adjust the menu items in the side menu */
+    .menu-content nav a {
+      font-size: 1.1rem;
+    }
+  
+    /* Increase spacing between social icons */
+    .social-icons {
+      gap: 1.25rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* For very small screens, further adjust the layout */
+    .side-menu {
+      width: 220px;
+    }
+  
+    .menu-toggle {
+      font-size: 1.5rem;
+    }
+  
+    .about {
+      padding: 5% 10%;
+    }
+  
+    .about-inner h2 {
+      font-size: 1.6rem;
+    }
+  
+    .about-inner p {
+      font-size: 0.85rem;
+    }
+  
+    .about-sections .section h3 {
+      font-size: 1.1rem;
+    }
+  
+    .about-sections .section ul li {
+      font-size: 0.9rem;
+    }
   }
   
