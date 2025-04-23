@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0;url=index.html">
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
   </head>
   <body>
-    <p>If you are not redirected, <a href="index.html">click here</a>.</p>
+    <p>If you are not redirected, <a href="/">click here</a>.</p>
     <script type="text/javascript">
       const path = location.pathname.split('/');
-      path.shift();
+      path.shift(); // remove the empty string before first "/"
       const newPath = path.join('/');
-      location.replace('/?' + newPath);
+      const search = location.search;
+      const hash = location.hash;
+      location.replace('/?' + newPath + search + hash);
     </script>
-    
   </body>
 </html>
