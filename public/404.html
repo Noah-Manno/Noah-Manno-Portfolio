@@ -7,12 +7,9 @@
   <body>
     <p>If you are not redirected, <a href="/">click here</a>.</p>
     <script type="text/javascript">
-      const path = location.pathname.split('/');
-      path.shift(); // remove the empty string before first "/"
-      const newPath = path.join('/');
-      const search = location.search;
-      const hash = location.hash;
-      location.replace('/?' + newPath + search + hash);
+      const path = location.pathname + location.search + location.hash;
+      const redirectUrl = '/?/' + path.replace(/^\/+/, ''); // ensures leading slash is trimmed
+      location.replace(redirectUrl);
     </script>
   </body>
 </html>

@@ -9,6 +9,7 @@ import './styles/Hero.css';
 import './styles/About.css';
 import './styles/SideMenu.css';
 
+// ✅ Handles redirects from 404.html with format "/?/about"
 function RedirectHandler() {
   const location = useLocation();
   const navigate = useNavigate();
@@ -16,12 +17,12 @@ function RedirectHandler() {
   useEffect(() => {
     const raw = location.search;
     if (raw.startsWith('?/')) {
-      const redirectPath = raw.substring(2); // Remove "?/"
+      const redirectPath = raw.substring(2).replace(/\/$/, ''); // Trim trailing slash
       navigate('/' + redirectPath, { replace: true });
     }
   }, [location, navigate]);
 
-  return null; // No UI needed—just runs logic
+  return null; // No visual output, just logic
 }
 
 function App() {
