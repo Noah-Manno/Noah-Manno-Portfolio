@@ -21,7 +21,7 @@ function App() {
   const toggleDarkMode = () => setDarkMode(prev => !prev);
 
   return (
-    <Router basename="/Noah-Manno-Portfolio">
+    <Router>
       <SideMenu darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Routes>
         <Route path="/" element={<Hero darkMode={darkMode} toggleDarkMode={toggleDarkMode} />} />
