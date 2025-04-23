@@ -5,5 +5,12 @@
   </head>
   <body>
     <p>If you are not redirected, <a href="index.html">click here</a>.</p>
+    <script type="text/javascript">
+      const path = location.pathname.split('/');
+      path.shift();
+      const newPath = path.join('/');
+      location.replace('/?' + newPath);
+    </script>
+    
   </body>
 </html>
