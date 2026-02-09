@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400&display=swap');
+
+.actor-home {
+  padding: 4rem 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  animation: fadeIn 1s ease-in;
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.main-headshot {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 4px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  border: 1px solid rgba(212, 175, 55, 0.3); /* Gold tint */
+}
+
+.actor-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem;
+  margin: 0;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
+.actor-tagline {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+  color: #d4af37; /* Theatrical Gold */
+  margin-top: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.actor-stats {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+  padding: 1rem 0;
+}
+
+.stat span {
+  font-weight: bold;
+  color: #888;
+  margin-right: 5px;
+}
+
+.cta-group {
+  display: flex;
+  gap: 15px;
+}
+
+.cta-primary {
+  background: #d4af37;
+  color: #000;
+  border: none;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.cta-primary:hover {
+  transform: scale(1.05);
+  background: #f1c40f;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .actor-stats {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .cta-group {
+    justify-content: center;
+  }
+}
+
+.featured-credits {
+    margin-top: 2rem;
+    background: rgba(212, 175, 55, 0.05); /* Very subtle gold tint */
+    padding: 2rem;
+    border-left: 4px solid #d4af37;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .status-badge {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: #d4af37;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .credit-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  .credit-card h3 {
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: var(--text-color); /* This will adapt to your darkMode prop */
+  }
+  
+  .ticket-link {
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }

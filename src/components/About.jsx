@@ -58,6 +58,21 @@ export default function About({ darkMode, toggleDarkMode }) {
               <h3>Professional Experience</h3>
               <ul>
                 <li>
+                  <strong>Web Experience Manager | Epilepsy Foundation</strong>
+                  <br />Present
+                  <p>
+                    As a Web Experience Manager, I am responsible for the development, maintenance,
+                    and optimization of the organization’s websites. I collaborate with
+                    cross-functional teams across marketing, data, and technology to ensure the
+                    web presence aligns with business goals. My role includes managing web
+                    development projects, overseeing vendor relationships, and leveraging Drupal,
+                    PHP, and JavaScript to enhance site performance and functionality. I also
+                    monitor website analytics and implement SEO and user experience strategies to
+                    drive engagement and measurable results.
+                  </p>
+                </li>
+
+                <li>
                   <strong>Web and Content Developer | Summit Area YMCA</strong>
                   <br />June 2024–Present
                   <p>

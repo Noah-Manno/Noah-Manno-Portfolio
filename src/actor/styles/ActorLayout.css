@@ -1,0 +1,61 @@
+.actor-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 10%;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.actor-nav-right {
+  display: flex;
+  align-items: center;
+  /* This creates the master gap between links and the toggle */
+  gap: 3rem; 
+}
+
+.actor-links {
+  display: flex;
+  /* This creates equal spacing between the text links themselves */
+  gap: 2rem;
+}
+
+.actor-links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1.5px;
+  color: inherit;
+  font-family: 'Lato', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.actor-links a:hover {
+  color: #d4af37; /* Gold hover state */
+}
+
+.theme-toggle-btn {
+  background: none;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: background 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  background: rgba(212, 175, 55, 0.1);
+}
+
+.actor-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
