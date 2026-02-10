@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <title>Redirecting...</title>
+    <meta charset="utf-8">
+    <title>Noah Manno</title>
+    <script type="text/javascript">
+      // This script checks if a redirect is needed
+      var pathSegmentsToKeep = 0;
+
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
   </head>
   <body>
-    <p>If you are not redirected, <a href="/">click here</a>.</p>
-    <script type="text/javascript">
-      const path = location.pathname + location.search + location.hash;
-      const redirectUrl = '/?/' + path.replace(/^\/+/, ''); // ensures leading slash is trimmed
-      location.replace(redirectUrl);
-    </script>
   </body>
 </html>
